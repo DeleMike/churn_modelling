@@ -163,9 +163,6 @@ model = xgb.train(xgb_params, dtrain, num_boost_round=100)
 y_pred = model.predict(dtest)
 print('The AUC on the final model is: ', roc_auc_score(y_test, y_pred))
 
-# In[944]:
-
-
 # saving model
 print('Saving model...')
 output_file = 'model_v0.bin'
